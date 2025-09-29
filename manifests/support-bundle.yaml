@@ -8,7 +8,7 @@ spec:
     - clusterResources: {}
     - logs:
         selector:
-          - app.kubernetes.io/name=vaultwarden
+          - app=slackernews
         namespace: '{{repl Namespace }}'
         limits:
           maxAge: 720h
