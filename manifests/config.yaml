@@ -5,7 +5,7 @@ metadata:
 spec:
   groups:
     - name: slackernews
-      title: Application Core
+      title: Application Core test
       description: |
         For this section, you can specify some core parameters for how
         Slackernews operates, including the domain where users will access it
