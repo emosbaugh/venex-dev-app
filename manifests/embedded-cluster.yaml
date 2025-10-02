@@ -2,3 +2,5 @@ apiVersion: embeddedcluster.replicated.com/v1beta1
 kind: Config
 spec:
   version: 2.10.0+k8s-1.33
+  binaryOverrideUrl: "https://tf-embedded-cluster-binaries.s3.us-east-1.amazonaws.com/releases/v2.10.0%2Bk8s-1.33.tgz"
+  metadataOverrideUrl: "https://tf-embedded-cluster-binaries.s3.us-east-1.amazonaws.com/metadata/v2.10.0%2Bk8s-1.33.json"
