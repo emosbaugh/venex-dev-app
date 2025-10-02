@@ -8,8 +8,9 @@ spec:
   title: SlackerNews
   icon: "https://uploads-ssl.webflow.com/6310ad0e6a18aa1620da6ae8/6330e04f42bc6a7ba03b4725_snicon.png"
   statusInformers:
-    - slackernews/deployment/slackernews
-    - slackernews/deployment/slackernews-nginx
-    - '{{repl if ConfigOptionEquals "deploy_postgres" "1"}}slackernews/statefulset/postgres{{repl end}}'
+    - '{{repl Namespace }}/deployment/slackernews'
+    - '{{repl Namespace }}/deployment/slackernews-nginx'
+    - '{{repl Namespace }}/deployment/replicated'
+    - '{{repl if ConfigOptionEquals "deploy_postgres" "1"}}{{repl Namespace }}/statefulset/postgres{{repl end}}'
   additionalNamespaces:
     - slackernews
